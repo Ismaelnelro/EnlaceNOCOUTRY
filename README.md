@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+<p align="center">
+    <img width="250" src="https://user-images.githubusercontent.com/106758379/231930033-19f0fc6e-6a8c-4530-b365-4a6163ea5c03.png" alt="Logo de proyecto">
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del proyecto
 
-Currently, two official plugins are available:
+Enlace es una plataforma digital que tiene como objetivo conectar organizaciones sin fines de lucro con estudiantes y nuevos profesionales que buscan oportunidades de prácticas laborales. Nuestra misión es contribuir a la sociedad al ayudar a causas benéficas, al mismo tiempo que brindamos a los jóvenes profesionales oportunidades de crecimiento en su carrera y la posibilidad de conectar con personas en su campo de interés. Creemos que al proporcionar experiencias de trabajo realistas, podemos ayudar a nuestros usuarios a desarrollar habilidades valiosas y hacer una diferencia positiva en sus comunidades.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Nos proponemos:
+- Crear un espacio seguro y confiable para profesionales y organizaciones, donde persevere la ayuda y la colaboración colectiva
+- Fomentar la ayuda voluntaria a causas sociales
+- Brindar oportunidades reales para el desarrollo profesional, impulsando la inclusión laboral y elevando el nivel de experiencia de nuevos profesionales
+- Facilitar la conexión entre partes para lograr una colaboración efectiva en beneficio de la sociedad.
 
-## Expanding the ESLint configuration
+## Equipo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Adam Jiménez: Desarrollador Frontend 
 
-- Configure the top-level `parserOptions` property like this:
+#### Ismael Rosas: Desarrollador Frontend  
+     
+#### Michael Liendo: Desarrollador Frontend  
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+#### Elias Galeano: Desarrollador Backend  
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Elizabeth León: Diseñadora UX / UI  
+
+## Stack / Tecnologías
+### Frontend
+- HTML/CSS
+- Javascript
+- Typescript
+- React JS
+- Tailwind CSS
+
+### Backend       
+- Typescript 
+- Swagger 
+- Mongoose de mongo db 
+- Express 
+- Jsonwebtokens
+
+#
+
+<p align="center">
+    <a title="Deploy de Enlace" href=""><img width="250" src="https://user-images.githubusercontent.com/106758379/233232859-a27f15c4-136e-4d94-bd4b-947f1cc641d0.png" alt="Logo de proyecto"></a>
+</p>
