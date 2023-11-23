@@ -1,12 +1,12 @@
 import Layout from "./layout/Layout"
+import { AboutPage } from "./pages/AboutPage"
 
 function App() {
 
   return (
     <>
-      <Layout>
-        HOLA
-      </Layout>
+      {/* <HomePage/> */}
+      <AboutPage/>
     </>
   )
 }

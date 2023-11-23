@@ -43,7 +43,7 @@ interface SocialIcon {
     [key: string]: ReactNode;
 }
 
-const socialIcons:SocialIcon[] = [
+const socialIcons: SocialIcon[] = [
     { linkedin: <LinkedInIcon /> },
     { instagram: <InstagramIcon /> },
     { twitter: <TwitterIcon /> },
@@ -54,10 +54,12 @@ const socialIcons:SocialIcon[] = [
 
 const Footer: React.FC = () => {
     return (
-        <footer className="max-w-[1440px]">
-            <section className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8 px-10 py-6 rounded-t-3xl bg-grey-900 text-primary">
+        <footer>
+            <section className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8 
+            items-center
+            px-10 py-6 rounded-t-3xl bg-grey-900 text-white">
                 {sections.map((section, index) => (
-                    <div key={index} className="min-w-[100px]">
+                    <div key={index} className="lg:min-w-[200px]">
                         <h2 className="m-1 mb-3 text-xs md:text-sm uppercase font-lato font-semibold">{section.title}</h2>
                         <ul>
                             {section.items.map((item, itemIndex) => (
@@ -70,15 +72,15 @@ const Footer: React.FC = () => {
                 ))}
             </section>
 
-            <section className="flex justify-around flex-wrap p-2  ">
-                <div className='flex gap-10'>
-                    <img className="w-8" src={Logo} alt="logo" />
+            <section className="flex justify-between flex-wrap py-2 px-10  ">
+                <div className='flex items-center gap-10'>
+                    <img className="w-8 " src={Logo} alt="logo" />
                     <span className="text-sm font-roboto font-normal hidden md:block ">Copyright © Enlace - ONG 2023</span>
                 </div>
 
                 <div className="text-secondary flex gap-5">
                     {socialIcons.map((socialIcon, index) => (
-                        <div key={index}>
+                        <div key={index} className='cursor-pointer hover:text-hoverPrimary'>
                             {Object.values(socialIcon)}
                         </div>
                     ))}

@@ -16,12 +16,20 @@ export default {
         400:"#9a9a9a",
         700:"#58595b",
         900:"#3C3C3C"
+      },
+      white:"#FFF",
+      blue:{
+        200:"#89D0CA"
       }
+    
     },
     colors:{
-      primary: "#fff",
+      white: "#FFF",
       secondary:"#3C3C3C",
+      tercero:"#FFDC72",
+      blue:"#89D0CA",
       hoverPrimary:"#f3973b"
+      
     }
   },
   plugins: [],
