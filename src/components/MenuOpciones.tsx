@@ -28,7 +28,7 @@ const socialIcons = [
 export const MenuOpciones = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
 
     return (
-        <div className={`absolute top-16  w-[350px] h-auto px-8 pt-12 pb-2 rounded-br-3xl text-primary bg-grey-900 transition-all duration-300
+        <div className={`absolute top-16  w-[350px] h-auto px-8 pt-12 pb-2 rounded-br-3xl text-white bg-grey-900 transition-all duration-300
          ${isMenuOpen ? 'left-0 h-[100px]' : '-left-[350px]'}`}>
             <section className="mb-10 flex flex-col gap-4">
                 <ul className="flex flex-col gap-4" >
@@ -43,14 +43,14 @@ export const MenuOpciones = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
                     }
                 </ul>
 
-                <button className='flex justify-center gap-2 py-1 w-40 font-medium rounded-md bg-primary  hover:w-64 transition-all duration-300'>
+                <button className='flex md:hidden justify-center gap-2 py-1 w-40 font-medium rounded-md bg-primary  hover:w-64 transition-all duration-300'>
                     <LoginOutlined />
                     Iniciar sesión
                 </button>
 
             </section>
-
-            <section className='grid grid-cols-2 '>
+            <hr className='hidden mb:block' />
+            <section className='grid grid-cols-2 mt-2 '>
                 <div className='flex items-center gap-2'>
                     <img className="w-5  text-primary" src={Logo} alt="logo" />
                     <p className="text-xs w-auto font-roboto ">Enlace ONG</p>
@@ -58,7 +58,7 @@ export const MenuOpciones = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
 
                 <div className='flex gap-2'>
                     {socialIcons.map((socialIcon, index) => (
-                        <div key={index} className='text-xs cursor-pointer'>
+                        <div key={index} className='text-xs cursor-pointer hover:text-hoverPrimary'>
                             {Object.values(socialIcon)}
                         </div>
                     ))}
