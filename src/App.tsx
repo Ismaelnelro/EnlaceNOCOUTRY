@@ -1,3 +1,4 @@
+import RegisterONGPage from "./auth/page/ong/RegisterPage"
 import { LoginPage } from "./auth/page/volunteer/LoginPage"
 import Layout from "./layout/Layout"
 import { AboutPage } from "./pages/AboutPage"
@@ -13,7 +14,8 @@ function App() {
       {/* <ConditionPage/> */}
       {/* <ContactPage/> */}
       {/* <RegisterPage /> */}
-      <LoginPage />
+      {/* <LoginPage /> */}
+      <RegisterONGPage/>
     </>
   )
 }

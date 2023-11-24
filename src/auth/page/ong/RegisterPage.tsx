@@ -16,19 +16,13 @@ const RegisterONGPage = () => {
 
     const { handleSubmit, values, handleChange, errors } = useFormik({
         initialValues: {
-            name: '',
-            username: '',
-            avatar: '',
-            lastName: '',
+            nameOrganizacion: '',
             email: '',
             password: '',
             confirmPassword: '',
         },
         validationSchema: Yup.object({
-            name: Yup.string().required('El nombre es obligatorio'),
-            lastName: Yup.string().required('El apellido es obligatorio'),
-            avatar: Yup.string().required(),
-            username: Yup.string().required(),
+            nameOrganizacion: Yup.string().required('El nombre de la organizacion es obligatorio'),
             email: Yup.string().email().required('El email es obligatorio'),
             password: Yup.string()
                 .min(8, 'La contraseña debe tener al menos 8 caracteres')
@@ -76,57 +70,18 @@ const RegisterONGPage = () => {
         <Layout>
             <AuthLayout handle={handleSubmit} isLogin={false}>
                 <>
-                    <div className="flex flex-col md:flex-row md:gap-4">
-                        <div className="w-full">
-                            <Input
-                                name="name"
-                                id="name"
-                                type="text"
-                                label="Nombre"
-                                placeholder="| Ingrese su nombre"
-                                error={errors.name}
-                                onChange={handleChange}
-                                value={values.name}
-                                className="w-full h-11"
-                            />
-                        </div>
-                        <div className="w-full">
-                            <Input
-                                name="lastName"
-                                id="lastName"
-                                type="text"
-                                label="Apellido"
-                                placeholder="| Ingrese su apellido"
-                                error={errors.lastName}
-                                onChange={handleChange}
-                                value={values.lastName}
-                                className="w-full h-11"
-                            />
-                        </div>
-                    </div>
                     <Input
-                        label="Nombre de usuario"
-                        name="username"
-                        id="username"
-                        type="username"
-                        placeholder="| Ingrese su nombre de usuario"
+                        name="name"
+                        id="name"
+                        type="text"
+                        label="Nombre de la organizacion "
+                        placeholder="| Ingrese el nombre de la organizacion"
+                        error={errors.nameOrganizacion}
                         onChange={handleChange}
-                        error={errors.username}
-                        value={values.username}
+                        value={values.nameOrganizacion}
                         className="w-full h-11"
                     />
-                    <Input
-                        label="Avatar"
-                        name="avatar"
-                        id="avatar"
-                        type="avatar"
-                        placeholder="| Ingrese la URL de un avatar"
-                        onChange={handleChange}
-                        error={errors.avatar}
-                        value={values.avatar}
-                        className="w-full h-11"
-                    />
-
+                  
                     <Input
                         label="Correo electrónico"
                         name="email"

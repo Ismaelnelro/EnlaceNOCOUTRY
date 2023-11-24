@@ -15,7 +15,7 @@ export const AuthLayout = ({ children, handle, isLogin }: AuthLayout) => {
     }
 
     return (
-        <div className=" px-10 md:px-20 lg:px-64 my-8">
+        <div className=" px-10 md:px-20 lg:px-72 my-8">
             <form onSubmit={handleSubmit} className='flex flex-col gap-3'>
                 <h2 className="text-5xl text-center text-secondary font-bold">
                     {isLogin ? (<>Iniciar sesión</>) : (<>Registro</>)}
