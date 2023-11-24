@@ -4,14 +4,13 @@ import * as Yup from 'yup';
 
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import Facebook from '@mui/icons-material/Facebook';
+
+import Layout from '../../../layout/Layout';
+import { AuthLayout } from '../../layout/AuthLayout';
+import Input from '../../../components/Input';
 
 
-import Layout from '../layout/Layout';
-import Input from '../components/Input';
-
-
-const RegisterPage = () => {
+const RegisterONGPage = () => {
 
     const [showPassword, setShowPassword] = useState(false);
 
@@ -75,9 +74,8 @@ const RegisterPage = () => {
 
     return (
         <Layout>
-            <div className=" px-10 md:px-20 lg:px-64 my-8">
-                <form onSubmit={handleSubmit} className='flex flex-col gap-3'>
-                    <h2 className="text-5xl text-center text-secondary font-bold">Registro</h2>
+            <AuthLayout handle={handleSubmit} isLogin={false}>
+                <>
                     <div className="flex flex-col md:flex-row md:gap-4">
                         <div className="w-full">
                             <Input
@@ -179,47 +177,10 @@ const RegisterPage = () => {
                             {showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
                         </div>
                     </div>
-
-                    <div className='flex flex-col gap-5 mt-10'>
-                        <button className="
-                    flex justify-center items-center gap-4
-                    py-2 px-6 
-                    text-sm font-medium leading-5 text-white 
-                    rounded-xl
-                     bg-violeta-200 hover:bg-violeta-400 
-                     transition-all duration-300"
-                            type="submit">
-                            Crear cuenta
-                        </button>
-
-                        <button className="
-                    flex justify-center items-center gap-4
-                     py-2 px-6  
-                     text-sm font-medium leading-5 text-white 
-                     rounded-xl
-                    bg-blue-500 hover:bg-blue-800
-                    transition-all duration-300
-                    "
-                            type="button"
-                        >
-                            <Facebook />
-                            Registrarme con facebook
-                        </button>
-
-                        <div className="flex justify-center gap-10">
-                            <p className="text-sm text-secondary">¿Ya tenés cuenta?</p>
-                            <a className="px-6 text-sm font-medium leading-5  text-white rounded-full  bg-primary"
-                                href="/auth/volunteer/login"
-                            >
-                                Inicia sesión
-                            </a>
-                        </div>
-                    </div>
-
-                </form>
-            </div>
+                </>
+            </AuthLayout>
         </Layout>
     );
 };
 
-export default RegisterPage
+export default RegisterONGPage
