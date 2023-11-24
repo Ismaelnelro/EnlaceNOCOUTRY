@@ -28,8 +28,8 @@ export default {
       secondary:"#3C3C3C",
       tercero:"#FFDC72",
       blue:"#89D0CA",
-      hoverPrimary:"#f3973b"
-      
+      hoverPrimary:"#f3973b",
+      warning:"#FF0000CC"
     }
   },
   plugins: [],

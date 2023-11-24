@@ -28,7 +28,7 @@ const socialIcons = [
 export const MenuOpciones = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
 
     return (
-        <div className={`absolute top-16  w-[350px] h-auto px-8 pt-12 pb-2 rounded-br-3xl text-white bg-grey-900 transition-all duration-300
+        <div className={`absolute top-16 z-50  w-[350px] h-auto px-8 pt-12 pb-2 rounded-br-3xl text-white bg-grey-900 transition-all duration-300
          ${isMenuOpen ? 'left-0 h-[100px]' : '-left-[350px]'}`}>
             <section className="mb-10 flex flex-col gap-4">
                 <ul className="flex flex-col gap-4" >
