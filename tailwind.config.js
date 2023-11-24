@@ -19,8 +19,14 @@ export default {
       },
       white:"#FFF",
       blue:{
-        200:"#89D0CA"
-      }
+        200:"#89D0CA",
+        500:"#1877F2",
+        800:"#1566cf"
+      },
+      violeta:{
+       200:"#A8A1DF",
+       400:"#7771a2",
+      },
     
     },
     colors:{

@@ -28,8 +28,8 @@ export default function Input({
   className,
 }: InputProps) {
   return (
-    <>
-      <div className="">
+    <div className='h-20'>
+      <>
         <label
           className="relative top-3 px-2 py-1 font-medium bg-white text-xs text-secondary"
           htmlFor={id}
@@ -50,8 +50,8 @@ export default function Input({
           required={required}
           autoComplete={autocomplete}
         />
-      </div>
+      </>
       <p className="text-sm pt-1 text-warning">{error}</p>
-    </>
+    </div>
   );
 }
