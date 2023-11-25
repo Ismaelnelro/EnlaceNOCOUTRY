@@ -4,6 +4,7 @@ import Layout from "./layout/Layout"
 import { AboutPage } from "./pages/AboutPage"
 import { ConditionPage } from "./pages/ConditionPage"
 import ContactPage from "./pages/ContactPage"
+import FrecuentAnswersQuestions from "./pages/FrecuentAnswersQuestions"
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       {/* <ContactPage/> */}
       {/* <RegisterPage /> */}
       {/* <LoginPage /> */}
-      <RegisterONGPage/>
+      {/* <RegisterONGPage/> */}
+      <FrecuentAnswersQuestions/>
     </>
   )
 }
