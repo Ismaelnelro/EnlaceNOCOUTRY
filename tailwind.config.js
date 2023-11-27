@@ -27,13 +27,23 @@ export default {
        200:"#A8A1DF",
        400:"#7771a2",
       },
+      green:{
+        200:"#9DF3A0",
+      },
     
     },
     colors:{
       white: "#FFF",
       secondary:"#3C3C3C",
       tercero:"#FFDC72",
-      blue:"#89D0CA",
+      blue:{
+        200:"#89D0CA",
+        500:"#1877F2",
+        800:"#1566cf"
+      },
+      green:{
+        200:"#9DF3A0",
+      },
       hoverPrimary:"#f3973b",
       warning:"#FF0000CC"
     }

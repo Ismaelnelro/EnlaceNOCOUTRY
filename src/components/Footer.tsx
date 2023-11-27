@@ -55,15 +55,15 @@ const socialIcons: SocialIcon[] = [
 const Footer: React.FC = () => {
     return (
         <footer>
-            <section className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8 
+            <section className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2 
             items-center
             px-10 py-6 rounded-t-3xl bg-grey-900 text-white">
                 {sections.map((section, index) => (
-                    <div key={index} className="lg:min-w-[200px]">
+                    <div key={index} className="">
                         <h2 className="m-1 mb-3 text-xs md:text-sm uppercase font-lato font-semibold">{section.title}</h2>
                         <ul>
                             {section.items.map((item, itemIndex) => (
-                                <li key={itemIndex} className="text-xs md:text-sm lg:text-base font-thin p-1">
+                                <li key={itemIndex} className="text-xs  font-thin p-1">
                                     {item}
                                 </li>
                             ))}
